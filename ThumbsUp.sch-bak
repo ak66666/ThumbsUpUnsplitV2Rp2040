@@ -37,30 +37,6 @@ F 3 "~" H 4400 1450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C_Small C8
-U 1 1 616BABD0
-P 13850 2850
-F 0 "C8" H 13942 2896 50  0000 L CNN
-F 1 "10uF" H 13942 2805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 13850 2850 50  0001 C CNN
-F 3 "~" H 13850 2850 50  0001 C CNN
-	1    13850 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR08
-U 1 1 616BBA62
-P 13850 3050
-F 0 "#PWR08" H 13850 2800 50  0001 C CNN
-F 1 "GND" H 13855 2877 50  0000 C CNN
-F 2 "" H 13850 3050 50  0001 C CNN
-F 3 "" H 13850 3050 50  0001 C CNN
-	1    13850 3050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13850 2950 13850 3050
-$Comp
 L Device:C_Small C6
 U 1 1 616BC589
 P 12700 3800
@@ -2739,27 +2715,6 @@ Wire Wire Line
 	12550 2700 12200 2700
 Wire Wire Line
 	12550 2900 12200 2900
-$Comp
-L RP2040:RP2040 IC1
-U 1 1 6393717F
-P 2050 2550
-F 0 "IC1" H 4094 1996 50  0000 L CNN
-F 1 "RP2040" H 4094 1905 50  0000 L CNN
-F 2 "RP2040:QFN40P700X700X90-57N-D" H 3900 3250 50  0001 L CNN
-F 3 "https://datasheets.raspberrypi.org/rp2040/rp2040-datasheet.pdf" H 3900 3150 50  0001 L CNN
-F 4 "Microcontroller in QFN Package" H 3900 3050 50  0001 L CNN "Description"
-F 5 "0.9" H 3900 2950 50  0001 L CNN "Height"
-F 6 "RASPBERRY-PI" H 3900 2850 50  0001 L CNN "Manufacturer_Name"
-F 7 "RP2040" H 3900 2750 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 3900 2650 50  0001 L CNN "Mouser Part Number"
-F 9 "" H 3900 2550 50  0001 L CNN "Mouser Price/Stock"
-F 10 "" H 3900 2450 50  0001 L CNN "Arrow Part Number"
-F 11 "" H 3900 2350 50  0001 L CNN "Arrow Price/Stock"
-F 12 "" H 3900 2250 50  0001 L CNN "Mouser Testing Part Number"
-F 13 "" H 3900 2150 50  0001 L CNN "Mouser Testing Price/Stock"
-	1    2050 2550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2050 3450 1550 3450
 $Comp
@@ -2835,8 +2790,6 @@ Wire Wire Line
 	3050 4650 3050 5100
 Wire Wire Line
 	3050 5100 1550 5100
-Wire Wire Line
-	1550 5100 1550 3450
 Connection ~ 1550 3450
 Wire Wire Line
 	3150 4650 3150 5300
@@ -2983,17 +2936,6 @@ F 3 "" H 7150 3500 50  0001 C CNN
 	1    7150 3500
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0115
-U 1 1 63977A35
-P 5600 3550
-F 0 "#PWR0115" H 5600 3300 50  0001 C CNN
-F 1 "GND" H 5605 3377 50  0000 C CNN
-F 2 "" H 5600 3550 50  0001 C CNN
-F 3 "" H 5600 3550 50  0001 C CNN
-	1    5600 3550
-	1    0    0    -1  
-$EndComp
 Text GLabel 2850 4650 3    50   Input ~ 0
 XIN
 Text GLabel 2950 4650 3    50   Input ~ 0
@@ -3038,17 +2980,6 @@ Wire Wire Line
 Connection ~ 5350 5150
 Wire Wire Line
 	5350 5150 5750 5150
-$Comp
-L power:+3.3V #PWR0116
-U 1 1 63D6B46A
-P 13850 2750
-F 0 "#PWR0116" H 13850 2600 50  0001 C CNN
-F 1 "+3.3V" H 13865 2923 50  0000 C CNN
-F 2 "" H 13850 2750 50  0001 C CNN
-F 3 "" H 13850 2750 50  0001 C CNN
-	1    13850 2750
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0117
 U 1 1 63E16CE5
@@ -3224,8 +3155,6 @@ $EndComp
 Connection ~ 6000 4000
 Wire Wire Line
 	1550 1200 1550 2550
-Wire Wire Line
-	2050 2550 1550 2550
 Connection ~ 1550 2550
 Wire Wire Line
 	1550 2550 1550 3450
@@ -3237,4 +3166,49 @@ Wire Wire Line
 Wire Wire Line
 	3550 5050 3550 5350
 Connection ~ 3550 5350
+Wire Wire Line
+	1550 5100 1550 3450
+Wire Wire Line
+	2050 2550 1550 2550
+$Comp
+L RP2040:RP2040 IC1
+U 1 1 6393717F
+P 2050 2550
+F 0 "IC1" H 4094 1996 50  0000 L CNN
+F 1 "RP2040" H 4094 1905 50  0000 L CNN
+F 2 "RP2040:QFN40P700X700X90-57N-D" H 3900 3250 50  0001 L CNN
+F 3 "https://datasheets.raspberrypi.org/rp2040/rp2040-datasheet.pdf" H 3900 3150 50  0001 L CNN
+F 4 "Microcontroller in QFN Package" H 3900 3050 50  0001 L CNN "Description"
+F 5 "0.9" H 3900 2950 50  0001 L CNN "Height"
+F 6 "RASPBERRY-PI" H 3900 2850 50  0001 L CNN "Manufacturer_Name"
+F 7 "RP2040" H 3900 2750 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 3900 2650 50  0001 L CNN "Mouser Part Number"
+F 9 "" H 3900 2550 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 3900 2450 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 3900 2350 50  0001 L CNN "Arrow Price/Stock"
+F 12 "" H 3900 2250 50  0001 L CNN "Mouser Testing Part Number"
+F 13 "" H 3900 2150 50  0001 L CNN "Mouser Testing Price/Stock"
+	1    2050 2550
+	1    0    0    -1  
+$EndComp
+Text GLabel 4050 2650 2    50   Input ~ 0
+ROW2
+Text GLabel 4050 2750 2    50   Input ~ 0
+ROW3
+Text GLabel 4050 2850 2    50   Input ~ 0
+COL5
+Text GLabel 4050 2950 2    50   Input ~ 0
+COL3
+Text GLabel 4050 3050 2    50   Input ~ 0
+COL2
+Text GLabel 4050 3150 2    50   Input ~ 0
+COL1
+Text GLabel 4050 3250 2    50   Input ~ 0
+COL0
+Text GLabel 4050 3350 2    50   Input ~ 0
+COL4
+Text GLabel 2050 2650 0    50   Input ~ 0
+ROW0
+Text GLabel 2050 2750 0    50   Input ~ 0
+ROW1
 $EndSCHEMATC
