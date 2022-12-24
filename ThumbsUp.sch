@@ -156,9 +156,9 @@ Wire Wire Line
 	8350 1950 8350 1750
 Wire Wire Line
 	8350 1600 8350 1750
-Text GLabel 7100 2350 2    50   Input ~ 0
+Text GLabel 7200 2350 2    50   Input ~ 0
 D-
-Text GLabel 7100 2450 2    50   Input ~ 0
+Text GLabel 7200 2450 2    50   Input ~ 0
 D+
 $Comp
 L Device:Polyfuse F1
@@ -3149,7 +3149,7 @@ L RP2040:RP2040 IC1
 U 1 1 6393717F
 P 2050 2550
 F 0 "IC1" H 4094 1996 50  0000 L CNN
-F 1 "RP2040" H 4094 1905 50  0000 L CNN
+F 1 "RP2040" H 2900 1900 50  0000 L CNN
 F 2 "RP2040:QFN40P700X700X90-57N-D" H 3900 3250 50  0001 L CNN
 F 3 "https://datasheets.raspberrypi.org/rp2040/rp2040-datasheet.pdf" H 3900 3150 50  0001 L CNN
 F 4 "Microcontroller in QFN Package" H 3900 3050 50  0001 L CNN "Description"
@@ -3272,4 +3272,10 @@ Wire Wire Line
 Connection ~ 6200 3250
 NoConn ~ 7100 2850
 NoConn ~ 7100 2950
+Wire Wire Line
+	7100 2350 7200 2350
+Connection ~ 7100 2350
+Wire Wire Line
+	7100 2450 7200 2450
+Connection ~ 7100 2450
 $EndSCHEMATC
