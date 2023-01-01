@@ -140,12 +140,12 @@ Connection ~ 11200 4400
 $Comp
 L Device:R_Small R3
 U 1 1 616D4E45
-P 7000 4350
-F 0 "R3" H 7059 4396 50  0000 L CNN
-F 1 "10k" H 7059 4305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 7000 4350 50  0001 C CNN
-F 3 "~" H 7000 4350 50  0001 C CNN
-	1    7000 4350
+P 7000 3800
+F 0 "R3" H 7059 3846 50  0000 L CNN
+F 1 "10k" H 7059 3755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7000 3800 50  0001 C CNN
+F 3 "~" H 7000 3800 50  0001 C CNN
+	1    7000 3800
 	0    -1   -1   0   
 $EndComp
 Text GLabel 4500 1350 2    50   Input ~ 0
@@ -2811,27 +2811,6 @@ Wire Wire Line
 Wire Wire Line
 	3350 1350 3350 1650
 $Comp
-L W25Q128JVSIM:W25Q128JVSIM IC2
-U 1 1 64048C65
-P 7100 4350
-F 0 "IC2" H 8200 4615 50  0000 C CNN
-F 1 "W25Q128JVSIM" H 8200 4524 50  0000 C CNN
-F 2 "W25Q128JVSIM:SOIC127P790X216-8N" H 9150 4450 50  0001 L CNN
-F 3 "https://www.winbond.com/hq/search-resource-file.jsp?partNo=W25Q128JVSIM&type=datasheet" H 9150 4350 50  0001 L CNN
-F 4 "128M-bit Serial Flash Memory with uniform 4KB sectors and Dual/Quad SPI" H 9150 4250 50  0001 L CNN "Description"
-F 5 "2.16" H 9150 4150 50  0001 L CNN "Height"
-F 6 "Winbond" H 9150 4050 50  0001 L CNN "Manufacturer_Name"
-F 7 "W25Q128JVSIM" H 9150 3950 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "454-W25Q128JVSIM" H 9150 3850 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/Winbond/W25Q128JVSIM?qs=qSfuJ%252Bfl%2Fd6d7A5WLggp6w%3D%3D" H 9150 3750 50  0001 L CNN "Mouser Price/Stock"
-F 10 "W25Q128JVSIM" H 9150 3650 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/w25q128jvsim/winbond-electronics?region=nac" H 9150 3550 50  0001 L CNN "Arrow Price/Stock"
-F 12 "" H 9150 3450 50  0001 L CNN "Mouser Testing Part Number"
-F 13 "" H 9150 3350 50  0001 L CNN "Mouser Testing Price/Stock"
-	1    7100 4350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C10
 U 1 1 6404A526
 P 9600 3900
@@ -3082,51 +3061,49 @@ Wire Wire Line
 $Comp
 L TL1016AAF220QG:TL1016AAF220QG BOOTSEL1
 U 1 1 63B7CD0C
-P 6250 4350
-F 0 "BOOTSEL1" V 6100 4100 50  0000 L CNN
-F 1 "TL1016AAF220QG" V 6200 4000 50  0000 L CNN
-F 2 "TL1016AAF220QG:TL1016AAF220QG" H 6900 4450 50  0001 L CNN
-F 3 "https://eu.mouser.com/datasheet/2/140/E_Switch_05112022_TL1016_Datasheet-2943618.pdf" H 6900 4350 50  0001 L CNN
-F 4 "Tactile Switches Tactile Switch SPST OFF-(ON) 50mA 12VDC" H 6900 4250 50  0001 L CNN "Description"
-F 5 "1.35" H 6900 4150 50  0001 L CNN "Height"
-F 6 "E-Switch" H 6900 4050 50  0001 L CNN "Manufacturer_Name"
-F 7 "TL1016AAF220QG" H 6900 3950 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "612-TL1016AAF220QG" H 6900 3850 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/E-Switch/TL1016AAF220QG?qs=t7xnP681wgW5zrSpkWH91Q%3D%3D" H 6900 3750 50  0001 L CNN "Mouser Price/Stock"
-F 10 "" H 6900 3650 50  0001 L CNN "Arrow Part Number"
-F 11 "" H 6900 3550 50  0001 L CNN "Arrow Price/Stock"
-F 12 "" H 6900 3450 50  0001 L CNN "Mouser Testing Part Number"
-F 13 "" H 6900 3350 50  0001 L CNN "Mouser Testing Price/Stock"
-	1    6250 4350
+P 6250 3800
+F 0 "BOOTSEL1" V 6100 3550 50  0000 L CNN
+F 1 "TL1016AAF220QG" V 6200 3450 50  0000 L CNN
+F 2 "TL1016AAF220QG:TL1016AAF220QG" H 6900 3900 50  0001 L CNN
+F 3 "https://eu.mouser.com/datasheet/2/140/E_Switch_05112022_TL1016_Datasheet-2943618.pdf" H 6900 3800 50  0001 L CNN
+F 4 "Tactile Switches Tactile Switch SPST OFF-(ON) 50mA 12VDC" H 6900 3700 50  0001 L CNN "Description"
+F 5 "1.35" H 6900 3600 50  0001 L CNN "Height"
+F 6 "E-Switch" H 6900 3500 50  0001 L CNN "Manufacturer_Name"
+F 7 "TL1016AAF220QG" H 6900 3400 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "612-TL1016AAF220QG" H 6900 3300 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/E-Switch/TL1016AAF220QG?qs=t7xnP681wgW5zrSpkWH91Q%3D%3D" H 6900 3200 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 6900 3100 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 6900 3000 50  0001 L CNN "Arrow Price/Stock"
+F 12 "" H 6900 2900 50  0001 L CNN "Mouser Testing Part Number"
+F 13 "" H 6900 2800 50  0001 L CNN "Mouser Testing Price/Stock"
+	1    6250 3800
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6250 4350 6450 4350
+	6250 3800 6450 3800
 Wire Wire Line
-	6250 5150 6450 5150
+	6250 4600 6450 4600
 Wire Wire Line
-	6450 5150 6450 4350
-Connection ~ 6450 4350
+	6450 4600 6450 3800
+Connection ~ 6450 3800
 Wire Wire Line
-	6450 4350 6900 4350
+	6150 3800 5950 3800
 Wire Wire Line
-	6150 4350 5950 4350
+	5950 3800 5950 4600
 Wire Wire Line
-	5950 4350 5950 5150
-Wire Wire Line
-	5950 5150 6150 5150
+	5950 4600 6150 4600
 $Comp
 L power:GND #PWR0120
 U 1 1 63D2EFAD
-P 5950 5150
-F 0 "#PWR0120" H 5950 4900 50  0001 C CNN
-F 1 "GND" H 5955 4977 50  0000 C CNN
-F 2 "" H 5950 5150 50  0001 C CNN
-F 3 "" H 5950 5150 50  0001 C CNN
-	1    5950 5150
+P 5950 4600
+F 0 "#PWR0120" H 5950 4350 50  0001 C CNN
+F 1 "GND" H 5955 4427 50  0000 C CNN
+F 2 "" H 5950 4600 50  0001 C CNN
+F 3 "" H 5950 4600 50  0001 C CNN
+	1    5950 4600
 	1    0    0    -1  
 $EndComp
-Connection ~ 5950 5150
+Connection ~ 5950 4600
 Wire Wire Line
 	1550 1200 1550 2550
 Connection ~ 1550 2550
@@ -3299,4 +3276,32 @@ F 13 "" H 8850 1800 50  0001 L CNN "Mouser Testing Price/Stock"
 	1    8200 2800
 	1    0    0    -1  
 $EndComp
+Text GLabel 2450 1650 1    50   Input ~ 0
+QSPI_SSN
+Text GLabel 7100 4350 0    50   Input ~ 0
+QSPI_SSN
+Wire Wire Line
+	6450 3800 6900 3800
+$Comp
+L W25Q128JVSIM:W25Q128JVSIM IC2
+U 1 1 64048C65
+P 7100 4350
+F 0 "IC2" H 8200 4615 50  0000 C CNN
+F 1 "W25Q128JVSIM" H 8200 4524 50  0000 C CNN
+F 2 "W25Q128JVSIM:SOIC127P790X216-8N" H 9150 4450 50  0001 L CNN
+F 3 "https://www.winbond.com/hq/search-resource-file.jsp?partNo=W25Q128JVSIM&type=datasheet" H 9150 4350 50  0001 L CNN
+F 4 "128M-bit Serial Flash Memory with uniform 4KB sectors and Dual/Quad SPI" H 9150 4250 50  0001 L CNN "Description"
+F 5 "2.16" H 9150 4150 50  0001 L CNN "Height"
+F 6 "Winbond" H 9150 4050 50  0001 L CNN "Manufacturer_Name"
+F 7 "W25Q128JVSIM" H 9150 3950 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "454-W25Q128JVSIM" H 9150 3850 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Winbond/W25Q128JVSIM?qs=qSfuJ%252Bfl%2Fd6d7A5WLggp6w%3D%3D" H 9150 3750 50  0001 L CNN "Mouser Price/Stock"
+F 10 "W25Q128JVSIM" H 9150 3650 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/w25q128jvsim/winbond-electronics?region=nac" H 9150 3550 50  0001 L CNN "Arrow Price/Stock"
+F 12 "" H 9150 3450 50  0001 L CNN "Mouser Testing Part Number"
+F 13 "" H 9150 3350 50  0001 L CNN "Mouser Testing Price/Stock"
+	1    7100 4350
+	1    0    0    -1  
+$EndComp
+Connection ~ 7100 3800
 $EndSCHEMATC
