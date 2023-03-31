@@ -1848,17 +1848,6 @@ Wire Wire Line
 Text Notes 17300 5200 0    50   ~ 0
 As in Planck/rev4:\n\n#define MATRIX_ROW_PINS { D3, D5, B5, B6 }\n#define MATRIX_COL_PINS { F1, F0, B0, C7, F4, F5, F6, F7, D4, D6, B4, D7 }\n\n#define DIODE_DIRECTION COL2ROW\n
 $Comp
-L Connector:Conn_01x04_Female J11
-U 1 1 6206CD49
-P 1750 12400
-F 0 "J11" V 1596 12548 50  0000 L CNN
-F 1 "Raiser_Female" V 1687 12548 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 1750 12400 50  0001 C CNN
-F 3 "~" H 1750 12400 50  0001 C CNN
-	1    1750 12400
-	0    1    1    0   
-$EndComp
-$Comp
 L Connector:Conn_01x04_Male J12
 U 1 1 6206CD4F
 P 1750 12550
@@ -1869,14 +1858,6 @@ F 3 "~" H 1750 12550 50  0001 C CNN
 	1    1750 12550
 	0    1    1    0   
 $EndComp
-NoConn ~ 1550 12200
-NoConn ~ 1650 12200
-NoConn ~ 1750 12200
-NoConn ~ 1850 12200
-NoConn ~ 1550 12750
-NoConn ~ 1650 12750
-NoConn ~ 1750 12750
-NoConn ~ 1850 12750
 $Comp
 L Connector:Conn_01x04_Female J9
 U 1 1 621DC2BB
@@ -1937,36 +1918,6 @@ NoConn ~ 2700 11950
 NoConn ~ 2800 11950
 NoConn ~ 2900 11950
 NoConn ~ 3000 11950
-$Comp
-L Connector:Conn_01x04_Female J15
-U 1 1 6225ECEC
-P 3050 12400
-F 0 "J15" V 2896 12548 50  0000 L CNN
-F 1 "Raiser_Female" V 2987 12548 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3050 12400 50  0001 C CNN
-F 3 "~" H 3050 12400 50  0001 C CNN
-	1    3050 12400
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:Conn_01x04_Male J16
-U 1 1 6225ECF6
-P 3050 12550
-F 0 "J16" V 3112 12694 50  0000 L CNN
-F 1 "Raiser_Male" V 3203 12694 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3050 12550 50  0001 C CNN
-F 3 "~" H 3050 12550 50  0001 C CNN
-	1    3050 12550
-	0    1    1    0   
-$EndComp
-NoConn ~ 2850 12200
-NoConn ~ 2950 12200
-NoConn ~ 3050 12200
-NoConn ~ 3150 12200
-NoConn ~ 2850 12750
-NoConn ~ 2950 12750
-NoConn ~ 3050 12750
-NoConn ~ 3150 12750
 $Comp
 L Connector:Conn_01x04_Female J17
 U 1 1 622DE716
@@ -2867,7 +2818,6 @@ Wire Wire Line
 	7100 4350 7100 3800
 Wire Wire Line
 	7100 3800 7350 3800
-Connection ~ 7100 4350
 Text GLabel 9300 4650 2    50   Input ~ 0
 QSPI_SD0
 Text GLabel 7100 4450 0    50   Input ~ 0
@@ -3304,4 +3254,133 @@ F 13 "" H 9150 3350 50  0001 L CNN "Mouser Testing Price/Stock"
 	1    0    0    -1  
 $EndComp
 Connection ~ 7100 3800
+$Comp
+L Connector:Conn_01x04_Female J11
+U 1 1 6206CD49
+P 1750 12400
+F 0 "J11" V 1596 12548 50  0000 L CNN
+F 1 "Raiser_Female" V 1687 12548 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 1750 12400 50  0001 C CNN
+F 3 "~" H 1750 12400 50  0001 C CNN
+	1    1750 12400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J15
+U 1 1 6225ECEC
+P 3050 12400
+F 0 "J15" V 2896 12548 50  0000 L CNN
+F 1 "Raiser_Female" V 2987 12548 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3050 12400 50  0001 C CNN
+F 3 "~" H 3050 12400 50  0001 C CNN
+	1    3050 12400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J16
+U 1 1 6225ECF6
+P 3050 12550
+F 0 "J16" V 3112 12694 50  0000 L CNN
+F 1 "Raiser_Male" V 3203 12694 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3050 12550 50  0001 C CNN
+F 3 "~" H 3050 12550 50  0001 C CNN
+	1    3050 12550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1550 12750 1650 12750
+Connection ~ 1650 12750
+Wire Wire Line
+	1650 12750 1750 12750
+Connection ~ 1750 12750
+Wire Wire Line
+	1750 12750 1850 12750
+Connection ~ 1850 12750
+Wire Wire Line
+	1850 12750 2250 12750
+Connection ~ 2850 12750
+Wire Wire Line
+	2850 12750 2950 12750
+Connection ~ 2950 12750
+Wire Wire Line
+	2950 12750 3050 12750
+Connection ~ 3050 12750
+Wire Wire Line
+	3050 12750 3150 12750
+Wire Wire Line
+	1550 12200 1650 12200
+Connection ~ 1650 12200
+Wire Wire Line
+	1650 12200 1750 12200
+Connection ~ 1750 12200
+Wire Wire Line
+	1750 12200 1850 12200
+Connection ~ 1850 12200
+Wire Wire Line
+	1850 12200 2450 12200
+Connection ~ 2850 12200
+Wire Wire Line
+	2850 12200 2950 12200
+Connection ~ 2950 12200
+Wire Wire Line
+	2950 12200 3050 12200
+Connection ~ 3050 12200
+Wire Wire Line
+	3050 12200 3150 12200
+$Comp
+L power:GND #PWR0116
+U 1 1 6438318D
+P 2450 12200
+F 0 "#PWR0116" H 2450 11950 50  0001 C CNN
+F 1 "GND" H 2455 12027 50  0000 C CNN
+F 2 "" H 2450 12200 50  0001 C CNN
+F 3 "" H 2450 12200 50  0001 C CNN
+	1    2450 12200
+	1    0    0    -1  
+$EndComp
+Connection ~ 2450 12200
+Wire Wire Line
+	2450 12200 2850 12200
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 6438E44E
+P 2650 12850
+F 0 "H3" H 2550 12807 50  0000 R CNN
+F 1 "MountingHole_Pad" H 2550 12898 50  0000 R CNN
+F 2 "MountingHole:MountingHole_6.4mm_M6_Pad_Via" H 2650 12850 50  0001 C CNN
+F 3 "~" H 2650 12850 50  0001 C CNN
+	1    2650 12850
+	-1   0    0    1   
+$EndComp
+Connection ~ 2650 12750
+Wire Wire Line
+	2650 12750 2850 12750
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 6438EF5B
+P 2450 12850
+F 0 "H2" H 2350 12807 50  0000 R CNN
+F 1 "MountingHole_Pad" H 2350 12898 50  0000 R CNN
+F 2 "MountingHole:MountingHole_6.4mm_M6_Pad_Via" H 2450 12850 50  0001 C CNN
+F 3 "~" H 2450 12850 50  0001 C CNN
+	1    2450 12850
+	-1   0    0    1   
+$EndComp
+Connection ~ 2450 12750
+Wire Wire Line
+	2450 12750 2650 12750
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 6438F90E
+P 2250 12850
+F 0 "H1" H 2150 12807 50  0000 R CNN
+F 1 "MountingHole_Pad" H 2150 12898 50  0000 R CNN
+F 2 "MountingHole:MountingHole_6.4mm_M6_Pad_Via" H 2250 12850 50  0001 C CNN
+F 3 "~" H 2250 12850 50  0001 C CNN
+	1    2250 12850
+	-1   0    0    1   
+$EndComp
+Connection ~ 2250 12750
+Wire Wire Line
+	2250 12750 2450 12750
 $EndSCHEMATC
