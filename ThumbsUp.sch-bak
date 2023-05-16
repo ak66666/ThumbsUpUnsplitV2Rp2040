@@ -1836,7 +1836,7 @@ Connection ~ 10100 9200
 Wire Wire Line
 	10100 9200 10200 9200
 Wire Wire Line
-	8450 9200 10100 9200
+	8450 9200 9400 9200
 Wire Wire Line
 	10200 9900 10200 9400
 Wire Wire Line
@@ -1888,36 +1888,6 @@ NoConn ~ 1550 11900
 NoConn ~ 1650 11900
 NoConn ~ 1750 11900
 NoConn ~ 1850 11900
-$Comp
-L Connector:Conn_01x04_Female J13
-U 1 1 62208DC7
-P 2900 11600
-F 0 "J13" V 2746 11748 50  0000 L CNN
-F 1 "Raiser_Female" V 2837 11748 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 2900 11600 50  0001 C CNN
-F 3 "~" H 2900 11600 50  0001 C CNN
-	1    2900 11600
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:Conn_01x04_Male J14
-U 1 1 62208DD1
-P 2900 11750
-F 0 "J14" V 2962 11894 50  0000 L CNN
-F 1 "Raiser_Male" V 3053 11894 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2900 11750 50  0001 C CNN
-F 3 "~" H 2900 11750 50  0001 C CNN
-	1    2900 11750
-	0    1    1    0   
-$EndComp
-NoConn ~ 2700 11400
-NoConn ~ 2800 11400
-NoConn ~ 2900 11400
-NoConn ~ 3000 11400
-NoConn ~ 2700 11950
-NoConn ~ 2800 11950
-NoConn ~ 2900 11950
-NoConn ~ 3000 11950
 $Comp
 L Connector:Conn_01x04_Female J17
 U 1 1 622DE716
@@ -2806,7 +2776,7 @@ L Device:R_Small R7
 U 1 1 640BF3ED
 P 7450 3800
 F 0 "R7" H 7509 3846 50  0000 L CNN
-F 1 "DNF" H 7509 3755 50  0000 L CNN
+F 1 "10K" H 7509 3755 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 7450 3800 50  0001 C CNN
 F 3 "~" H 7450 3800 50  0001 C CNN
 	1    7450 3800
@@ -2886,12 +2856,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0117
 U 1 1 63E16CE5
-P 3250 6150
-F 0 "#PWR0117" H 3250 5900 50  0001 C CNN
-F 1 "GND" H 3255 5977 50  0000 C CNN
-F 2 "" H 3250 6150 50  0001 C CNN
-F 3 "" H 3250 6150 50  0001 C CNN
-	1    3250 6150
+P 4600 5750
+F 0 "#PWR0117" H 4600 5500 50  0001 C CNN
+F 1 "GND" H 4605 5577 50  0000 C CNN
+F 2 "" H 4600 5750 50  0001 C CNN
+F 3 "" H 4600 5750 50  0001 C CNN
+	1    4600 5750
 	1    0    0    -1  
 $EndComp
 Text GLabel 2550 1650 1    50   Input ~ 0
@@ -2975,98 +2945,11 @@ $EndComp
 Connection ~ 4200 4350
 Text Notes 4500 4200 0    50   ~ 0
 Pull-up for \nCirque Trackpad
-$Comp
-L TL1016AAF220QG:TL1016AAF220QG RUN1
-U 1 1 639D06EF
-P 3550 5350
-F 0 "RUN1" V 3950 5600 50  0000 L CNN
-F 1 "TL1016AAF220QG" V 4100 5600 50  0000 L CNN
-F 2 "TL1016AAF220QG:TL1016AAF220QG" H 4200 5450 50  0001 L CNN
-F 3 "https://eu.mouser.com/datasheet/2/140/E_Switch_05112022_TL1016_Datasheet-2943618.pdf" H 4200 5350 50  0001 L CNN
-F 4 "Tactile Switches Tactile Switch SPST OFF-(ON) 50mA 12VDC" H 4200 5250 50  0001 L CNN "Description"
-F 5 "1.35" H 4200 5150 50  0001 L CNN "Height"
-F 6 "E-Switch" H 4200 5050 50  0001 L CNN "Manufacturer_Name"
-F 7 "TL1016AAF220QG" H 4200 4950 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "612-TL1016AAF220QG" H 4200 4850 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/E-Switch/TL1016AAF220QG?qs=t7xnP681wgW5zrSpkWH91Q%3D%3D" H 4200 4750 50  0001 L CNN "Mouser Price/Stock"
-F 10 "" H 4200 4650 50  0001 L CNN "Arrow Part Number"
-F 11 "" H 4200 4550 50  0001 L CNN "Arrow Price/Stock"
-F 12 "" H 4200 4450 50  0001 L CNN "Mouser Testing Part Number"
-F 13 "" H 4200 4350 50  0001 L CNN "Mouser Testing Price/Stock"
-	1    3550 5350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3550 5350 3700 5350
-Wire Wire Line
-	3700 5350 3700 6150
-Wire Wire Line
-	3700 6150 3550 6150
-Wire Wire Line
-	3450 5350 3250 5350
-Wire Wire Line
-	3250 5350 3250 6150
-Wire Wire Line
-	3250 6150 3450 6150
-$Comp
-L TL1016AAF220QG:TL1016AAF220QG BOOTSEL1
-U 1 1 63B7CD0C
-P 6250 3800
-F 0 "BOOTSEL1" V 6100 3550 50  0000 L CNN
-F 1 "TL1016AAF220QG" V 6200 3450 50  0000 L CNN
-F 2 "TL1016AAF220QG:TL1016AAF220QG" H 6900 3900 50  0001 L CNN
-F 3 "https://eu.mouser.com/datasheet/2/140/E_Switch_05112022_TL1016_Datasheet-2943618.pdf" H 6900 3800 50  0001 L CNN
-F 4 "Tactile Switches Tactile Switch SPST OFF-(ON) 50mA 12VDC" H 6900 3700 50  0001 L CNN "Description"
-F 5 "1.35" H 6900 3600 50  0001 L CNN "Height"
-F 6 "E-Switch" H 6900 3500 50  0001 L CNN "Manufacturer_Name"
-F 7 "TL1016AAF220QG" H 6900 3400 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "612-TL1016AAF220QG" H 6900 3300 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/E-Switch/TL1016AAF220QG?qs=t7xnP681wgW5zrSpkWH91Q%3D%3D" H 6900 3200 50  0001 L CNN "Mouser Price/Stock"
-F 10 "" H 6900 3100 50  0001 L CNN "Arrow Part Number"
-F 11 "" H 6900 3000 50  0001 L CNN "Arrow Price/Stock"
-F 12 "" H 6900 2900 50  0001 L CNN "Mouser Testing Part Number"
-F 13 "" H 6900 2800 50  0001 L CNN "Mouser Testing Price/Stock"
-	1    6250 3800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6250 3800 6450 3800
-Wire Wire Line
-	6250 4600 6450 4600
-Wire Wire Line
-	6450 4600 6450 3800
-Connection ~ 6450 3800
-Wire Wire Line
-	6150 3800 5950 3800
-Wire Wire Line
-	5950 3800 5950 4600
-Wire Wire Line
-	5950 4600 6150 4600
-$Comp
-L power:GND #PWR0120
-U 1 1 63D2EFAD
-P 5950 4600
-F 0 "#PWR0120" H 5950 4350 50  0001 C CNN
-F 1 "GND" H 5955 4427 50  0000 C CNN
-F 2 "" H 5950 4600 50  0001 C CNN
-F 3 "" H 5950 4600 50  0001 C CNN
-	1    5950 4600
-	1    0    0    -1  
-$EndComp
-Connection ~ 5950 4600
 Wire Wire Line
 	1550 1200 1550 2550
 Connection ~ 1550 2550
 Wire Wire Line
 	1550 2550 1550 3450
-Connection ~ 3250 6150
-Wire Wire Line
-	3450 4650 3450 5050
-Wire Wire Line
-	3450 5050 3550 5050
-Wire Wire Line
-	3550 5050 3550 5350
-Connection ~ 3550 5350
 Wire Wire Line
 	1550 5100 1550 3450
 Wire Wire Line
@@ -3230,8 +3113,6 @@ Text GLabel 2450 1650 1    50   Input ~ 0
 QSPI_SSN
 Text GLabel 7100 4350 0    50   Input ~ 0
 QSPI_SSN
-Wire Wire Line
-	6450 3800 6900 3800
 $Comp
 L W25Q128JVSIM:W25Q128JVSIM IC2
 U 1 1 64048C65
@@ -3342,12 +3223,12 @@ Connection ~ 2450 12200
 Wire Wire Line
 	2450 12200 2850 12200
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H3
 U 1 1 6438E44E
 P 2650 12850
-F 0 "H?" H 2550 12807 50  0000 R CNN
+F 0 "H3" H 2550 12807 50  0000 R CNN
 F 1 "MountingHole_Pad" H 2550 12898 50  0000 R CNN
-F 2 "" H 2650 12850 50  0001 C CNN
+F 2 "MountingHole:MountingHole_6.4mm_M6_Pad_Via" H 2650 12850 50  0001 C CNN
 F 3 "~" H 2650 12850 50  0001 C CNN
 	1    2650 12850
 	-1   0    0    1   
@@ -3356,12 +3237,12 @@ Connection ~ 2650 12750
 Wire Wire Line
 	2650 12750 2850 12750
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H2
 U 1 1 6438EF5B
 P 2450 12850
-F 0 "H?" H 2350 12807 50  0000 R CNN
+F 0 "H2" H 2350 12807 50  0000 R CNN
 F 1 "MountingHole_Pad" H 2350 12898 50  0000 R CNN
-F 2 "" H 2450 12850 50  0001 C CNN
+F 2 "MountingHole:MountingHole_6.4mm_M6_Pad_Via" H 2450 12850 50  0001 C CNN
 F 3 "~" H 2450 12850 50  0001 C CNN
 	1    2450 12850
 	-1   0    0    1   
@@ -3370,12 +3251,12 @@ Connection ~ 2450 12750
 Wire Wire Line
 	2450 12750 2650 12750
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H1
 U 1 1 6438F90E
 P 2250 12850
-F 0 "H?" H 2150 12807 50  0000 R CNN
+F 0 "H1" H 2150 12807 50  0000 R CNN
 F 1 "MountingHole_Pad" H 2150 12898 50  0000 R CNN
-F 2 "" H 2250 12850 50  0001 C CNN
+F 2 "MountingHole:MountingHole_6.4mm_M6_Pad_Via" H 2250 12850 50  0001 C CNN
 F 3 "~" H 2250 12850 50  0001 C CNN
 	1    2250 12850
 	-1   0    0    1   
@@ -3383,4 +3264,211 @@ $EndComp
 Connection ~ 2250 12750
 Wire Wire Line
 	2250 12750 2450 12750
+$Comp
+L Connector:Conn_01x04_Female J13
+U 1 1 62208DC7
+P 9400 12200
+F 0 "J13" V 9246 12348 50  0000 L CNN
+F 1 "Raiser_Female" V 9337 12348 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 9400 12200 50  0001 C CNN
+F 3 "~" H 9400 12200 50  0001 C CNN
+	1    9400 12200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J14
+U 1 1 62208DD1
+P 9400 12050
+F 0 "J14" V 9462 12194 50  0000 L CNN
+F 1 "Raiser_Male" V 9553 12194 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 9400 12050 50  0001 C CNN
+F 3 "~" H 9400 12050 50  0001 C CNN
+	1    9400 12050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ThumbsUp-rescue:MX-NoLED-MX_Alps_Hybrid MX46
+U 1 1 649C6FB1
+P 9650 12800
+F 0 "MX46" H 9683 13023 60  0000 C CNN
+F 1 "SwRThumb3" H 9683 12949 20  0000 C CNN
+F 2 "keyswitches:Kailh_socket_PG1350_optional" H 9025 12775 60  0001 C CNN
+F 3 "" H 9025 12775 60  0001 C CNN
+	1    9650 12800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L ThumbsUp-rescue:MX-NoLED-MX_Alps_Hybrid MX45
+U 1 1 649C8AE9
+P 9150 12800
+F 0 "MX45" H 9183 13023 60  0000 C CNN
+F 1 "SwLThumb3" H 9183 12949 20  0000 C CNN
+F 2 "keyswitches:Kailh_socket_PG1350_optional" H 8525 12775 60  0001 C CNN
+F 3 "" H 8525 12775 60  0001 C CNN
+	1    9150 12800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 12400 9500 12750
+Wire Wire Line
+	9600 12400 9850 12400
+Wire Wire Line
+	9850 12400 9850 12950
+Wire Wire Line
+	9850 12950 9700 12950
+Wire Wire Line
+	9400 12400 9400 12950
+Wire Wire Line
+	9400 12950 9200 12950
+Wire Wire Line
+	9000 12750 9000 12450
+Wire Wire Line
+	9000 12450 9300 12450
+Wire Wire Line
+	9300 12450 9300 12400
+$Comp
+L Device:D_Small D46
+U 1 1 64CF2C97
+P 9500 9300
+F 0 "D46" V 9300 9350 50  0000 R CNN
+F 1 "D_Small" V 9455 9232 50  0001 R CNN
+F 2 "Diode_SMD:D_SOD-123" V 9500 9300 50  0001 C CNN
+F 3 "~" V 9500 9300 50  0001 C CNN
+	1    9500 9300
+	0    1    1    0   
+$EndComp
+Connection ~ 9500 9200
+Wire Wire Line
+	9500 9200 10100 9200
+$Comp
+L Device:D_Small D45
+U 1 1 64CF3524
+P 9400 9300
+F 0 "D45" V 9200 9350 50  0000 R CNN
+F 1 "D_Small" V 9355 9232 50  0001 R CNN
+F 2 "Diode_SMD:D_SOD-123" V 9400 9300 50  0001 C CNN
+F 3 "~" V 9400 9300 50  0001 C CNN
+	1    9400 9300
+	0    1    1    0   
+$EndComp
+Connection ~ 9400 9200
+Wire Wire Line
+	9400 9200 9500 9200
+Wire Wire Line
+	9500 9400 9500 11850
+Wire Wire Line
+	9400 9400 9400 11850
+Wire Wire Line
+	6100 6900 6100 11600
+Wire Wire Line
+	6100 11600 9300 11600
+Wire Wire Line
+	9300 11600 9300 11850
+Connection ~ 6100 6900
+Wire Wire Line
+	12200 6900 12200 11600
+Wire Wire Line
+	12200 11600 9600 11600
+Wire Wire Line
+	9600 11600 9600 11850
+Connection ~ 12200 6900
+$Comp
+L BUTT-4:BUTT-4 RUN1
+U 1 1 64E31CC2
+P 3700 5300
+F 0 "RUN1" H 4150 5565 50  0000 C CNN
+F 1 "BUTT-4" H 4150 5474 50  0000 C CNN
+F 2 "BUTT-4:BUTT4" H 4450 5400 50  0001 L CNN
+F 3 "http://site.gravitech.us/Components/BUTT-4/BUTT-4_datasheet.pdf" H 4450 5300 50  0001 L CNN
+F 4 "Tactile Switches MINI PUSH BUTTON SWITCH 4-PIN QTY. 4" H 4450 5200 50  0001 L CNN "Description"
+F 5 "9.5" H 4450 5100 50  0001 L CNN "Height"
+F 6 "Gravitech" H 4450 5000 50  0001 L CNN "Manufacturer_Name"
+F 7 "BUTT-4" H 4450 4900 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "992-BUTT-4" H 4450 4800 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Gravitech/BUTT-4?qs=Vxac6xGyzPm51iLpy8GNew%3D%3D" H 4450 4700 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 4450 4600 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 4450 4500 50  0001 L CNN "Arrow Price/Stock"
+	1    3700 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 5300 3450 5300
+Wire Wire Line
+	3450 5300 3450 4650
+Wire Wire Line
+	3700 5500 3450 5500
+Wire Wire Line
+	3450 5500 3450 5300
+Connection ~ 3450 5300
+Wire Wire Line
+	4600 5300 4600 5400
+Connection ~ 4600 5400
+Wire Wire Line
+	4600 5400 4600 5700
+Wire Wire Line
+	3700 5400 3700 5500
+Wire Wire Line
+	3700 5700 4600 5700
+Connection ~ 3700 5500
+Wire Wire Line
+	3700 5500 3700 5700
+Connection ~ 4600 5700
+Wire Wire Line
+	4600 5700 4600 5750
+$Comp
+L power:GND #PWR0120
+U 1 1 651DC6A2
+P 6400 4800
+F 0 "#PWR0120" H 6400 4550 50  0001 C CNN
+F 1 "GND" H 6405 4627 50  0000 C CNN
+F 2 "" H 6400 4800 50  0001 C CNN
+F 3 "" H 6400 4800 50  0001 C CNN
+	1    6400 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L BUTT-4:BUTT-4 BOOTSEL1
+U 1 1 651DC6B4
+P 5500 4350
+F 0 "BOOTSEL1" H 5950 4615 50  0000 C CNN
+F 1 "BUTT-4" H 5950 4524 50  0000 C CNN
+F 2 "BUTT-4:BUTT4" H 6250 4450 50  0001 L CNN
+F 3 "http://site.gravitech.us/Components/BUTT-4/BUTT-4_datasheet.pdf" H 6250 4350 50  0001 L CNN
+F 4 "Tactile Switches MINI PUSH BUTTON SWITCH 4-PIN QTY. 4" H 6250 4250 50  0001 L CNN "Description"
+F 5 "9.5" H 6250 4150 50  0001 L CNN "Height"
+F 6 "Gravitech" H 6250 4050 50  0001 L CNN "Manufacturer_Name"
+F 7 "BUTT-4" H 6250 3950 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "992-BUTT-4" H 6250 3850 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Gravitech/BUTT-4?qs=Vxac6xGyzPm51iLpy8GNew%3D%3D" H 6250 3750 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 6250 3650 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 6250 3550 50  0001 L CNN "Arrow Price/Stock"
+	1    5500 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4350 5250 4350
+Wire Wire Line
+	5500 4550 5250 4550
+Wire Wire Line
+	5250 4550 5250 4350
+Wire Wire Line
+	6400 4350 6400 4450
+Connection ~ 6400 4450
+Wire Wire Line
+	6400 4450 6400 4750
+Wire Wire Line
+	5500 4450 5500 4550
+Wire Wire Line
+	5500 4750 6400 4750
+Connection ~ 5500 4550
+Wire Wire Line
+	5500 4550 5500 4750
+Connection ~ 6400 4750
+Wire Wire Line
+	6400 4750 6400 4800
+Wire Wire Line
+	6900 3800 5250 3800
+Wire Wire Line
+	5250 3800 5250 4350
+Connection ~ 5250 4350
 $EndSCHEMATC
